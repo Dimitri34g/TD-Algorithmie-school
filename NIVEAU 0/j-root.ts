@@ -1,4 +1,4 @@
-function root(a: number, b: number, c: number) {
+function root(a: number, b: number, c: number):number[] {
     let array: number[] = [];
     let res: number = 0;
     res = b * b - 4 * (a * c)
@@ -20,6 +20,7 @@ function root(a: number, b: number, c: number) {
         array.push(rootRes1, rootRes2)
         return array
     }
+    return array
 }
 
 console.log(root(199, 606, 123))
